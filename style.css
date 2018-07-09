@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --heart: #EC0036;
+    --bg: #3D2D31;
+    --bright: #E4E5FC;
+    --cubic: cubic-bezier(.74,.09,.4,.94);
+}
+body{
+    background: var(--bg);
+}
+.container{
+    font-size: 7vw;
+    position: relative;
+    display: inline-block;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 3px;
+    color: var(--bright);
+    margin: 25vh 10%;
+}
+.container div{
+    display: inline-block;
+}
+.webdesign, .websites{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.webdesign{
+    animation: webdesign-ani 3s alternate infinite var(--cubic);
+}
+@keyframes webdesign-ani{
+    0%{opacity: 0}
+    40%{opacity: 0}
+   
+    60%{opacity: 1}
+    100%{opacity: 1}
+}
+
+.websites{
+    animation: websites-ani 3s alternate infinite var(--cubic);
+    
+}
+@keyframes websites-ani{
+    0%{opacity: 1}
+    40%{opacity: 1}
+   
+    60%{opacity: 0}
+    100%{opacity: 0}
+}
+.de{
+    position: relative;
+    animation: de-ani 3s alternate infinite var(--cubic);
+}
+@keyframes de-ani{
+    0%{top: 0; opacity: 1}
+    40%{top: 0; opacity: 1}
+    60%{top: -20px; opacity: 0}
+    100%{top: -20px; opacity: 0}
+}
+.pe{
+    position: relative;
+    animation: pe-ani 3s alternate infinite var(--cubic);
+}
+@keyframes pe-ani{
+    0%{bottom: 0; opacity: 1}
+    40%{bottom: 0; opacity: 1}
+    60%{bottom: -20px; opacity: 0}
+    100%{bottom: -20px; opacity: 0}
+}
+.lo{
+    position: relative;
+    color: var(--heart);
+    animation: lo-ani 3s alternate infinite var(--cubic);
+
+}
+@keyframes lo-ani{
+    0%{left: 0; color: var(--bright)}
+    40%{left: 0; color: var(--bright)}
+
+    50%{
+    color: var(--heart)}
+
+    60%{left: -15%}
+    100%{left: -15%}
+}
+.ve{
+    position: relative;
+    color: var(--heart);
+    animation: ve-ani 3s alternate infinite var(--cubic);
+
+}
+@keyframes ve-ani{
+    0%{left: 0; color: var(--bright)}
+    40%{left: 0; color: var(--bright)}
+    
+    50%{
+    color: var(--heart)}
+    
+    60%{left: 13%}
+    100%{left: 13%}
+}
